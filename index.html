@@ -8,30 +8,112 @@
 </head>
 
 <body>
-  <header>
-    <a class="logo-link" href="#">
-      <img class="header-logo" src="/gllacy/images/logotip-header.svg" width="359" height="146" alt="Логотип «Глейси».">
-    </a>
-    <ul class="navigation-user-list">
-      <li class="navigation-user-item">
-        <a class="navigation-user-link" href="#">Каталог</a>
-      </li>
-      <li class="navigation-user-item">
-        <a class="navigation-user-link" href="#">Доставка и оплата</a>
-      </li>
-      <li class="navigation-user-item">
-        <a class="navigation-user-link" href="#">О компании</a>
-      </li>
-    </ul>
-    <address class="contacts-phone">
+  <header class="page-header">
+    <h1 class="visually-hidden">Онлайн магазин мороженого «Глейси»</h1>
+    <nav class="navigation-list">
+      <a class="logo-link" href="#">
+        <img class="header-logo" src="/gllacy/images/logotip-header.svg" width="137" height="56"
+          alt="Логотип «Глейси».">
+      </a>
+      <ul class="navigation-user-list">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Каталог</a>
+          <ul class="subcatalog">
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">
+                Новинки
+              </a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">
+                Сливочное
+              </a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">
+                Щербеты
+              </a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">
+                Фруктовый лед
+              </a>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">
+                Мелорин
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">О компании</a>
+        </li>
+      </ul>
       <a class="contacts-phone" href="tel:88005558628">+7 (800) 555-86-28</a>
-    </address>
-    <button class="enter" type="button">
-      <span>Вход</span>
-    </button>
-    <button class="basket" type="button">
-      <span>Пусто</span>
-    </button>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <button class="search" type="button">
+            <svg width="14.83" height="14.83" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.91 7.25a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67
+                                             0Zm9.56 5.16a6.67 6.67 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z" fill="#2D3440" />
+            </svg>
+          </button>
+          <div class="popup popup-search popup-search-hide">
+            <form action="https://echo.htmlacademy.ru/" class="popup-form-search" method="get">
+              <label for="popup-search-text" class="visually-hidden">Поиск</label>
+              <input id="popup-search-text" class="popup-search-text popup-input invalid-input-text" type="text"
+                name="popup-search-text" placeholder="Поиск по сайту">
+              <button type="button" class="popup-button-remove button-search-delete"></button>
+            </form>
+          </div>
+        </li>
+        <li class="navigation-item">
+          <button class="enter" type="button">
+            <svg width="14.83" height="14.83" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.20837 0.874999C9.20837 0.506809 9.50685 0.208332 9.87504 0.208332H12.875C13.4497 0.208332 14.0008 0.436605 14.4071 0.842934C14.8134 1.24926 15.0417 1.80036 15.0417 2.375V12.875C15.0417 13.4496 14.8134 14.0007 14.4071 14.4071C14.0008 14.8134 13.4497 15.0417 12.875 15.0417H9.87504C9.50685 15.0417 9.20837 14.7432 9.20837 14.375C9.20837 14.0068 9.50685 13.7083 9.87504 13.7083H12.875C13.0961 13.7083 13.308 13.6205 13.4643 13.4643C13.6206 13.308 13.7084 13.096 13.7084 12.875V2.375C13.7084 2.15399 13.6206 1.94202 13.4643 1.78574C13.308 1.62946 13.0961 1.54167 12.875 1.54167H9.87504C9.50685 1.54167 9.20837 1.24319 9.20837 0.874999ZM5.65359 3.40359C5.91394 3.14324 6.33605 3.14324 6.5964 3.40359L10.3418 7.14903C10.4652 7.27002 10.5417 7.43857 10.5417 7.625C10.5417 7.81143 10.4652 7.97999 10.3418 8.10098L6.5964 11.8464C6.33605 12.1068 5.91394 12.1068 5.65359 11.8464C5.39324 11.5861 5.39324 11.1639 5.65359 10.9036L8.26552 8.29167H0.875041C0.506851 8.29167 0.208374 7.99319 0.208374 7.625C0.208374 7.25681 0.506851 6.95833 0.875041 6.95833H8.26552L5.65359 4.3464C5.39324 4.08605 5.39324 3.66394 5.65359 3.40359Z"
+                fill="#2D3440" />
+            </svg>
+            <span>Вход</span>
+          </button>
+          <div class="popup popup-login popup-login-hide">
+            <h2 class="popup-title popup-title-login">Личный кабинет</h2>
+            <form action="https://echo.htmlacademy.ru/" method="post" class="popup-login-form">
+              <label for="popup-login-usermail" class="visually-hidden">Адрес электронной почты</label>
+              <input id="popup-login-usermail" name="popup-login-usermail" type="email"
+                class="popup-login-usermail popup-input popup-login-input" placeholder="email@example.com">
+              <label for="popup-login-userpass" class="visually-hidden">Пароль пользователя</label>
+              <input type="password" name="popup-login-userpass" id="popup-login-userpass"
+                class="popup-login-userpass popup-input popup-login-input" placeholder="Пароль">
+              <div class="popup-login-container">
+                <button type="submit" class="button-red">Войти</button>
+                <div class="popup-login-links-wraper">
+                  <a class="popup-login-link" href="#">Забыли пароль?</a>
+                  <a class="popup-login-link" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="navigation-item">
+          <button class="basket" type="button">
+            <svg class="user-icon" aria-hidden="true" focusable="false" width="17" height="16" viewBox="0 0 17 16"
+              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.31254 0.489594C0.944351 0.489594 0.645874 0.78807 0.645874 1.15626C0.645874 1.52445 0.944351 1.82293 1.31254 1.82293H3.37353L3.91319 4.5192C3.91612 4.53801 3.91985 4.55655 3.92432 4.5748L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54046C16.3456 4.34529 16.2938 4.14369 16.1672 3.99061C16.0405 3.83752 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02542C4.51133 0.71385 4.23774 0.489594 3.91999 0.489594H1.31254ZM6.32068 9.75386L5.38566 5.08224H14.8477L13.9562 9.75686C13.9268 9.90269 13.8472 10.0336 13.7313 10.127C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.127C6.42978 10.0332 6.35 9.90146 6.32087 9.75482L6.32068 9.75386ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8756 6.5285 12.8756C7.25644 12.8756 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8756 13.6985 12.8756C14.4264 12.8756 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
+            </svg>
+            <span>Пусто</span>
+          </button>
+          <div class="popup popup-cart-empty popup-cart-empty-hide">
+            <h2 class="cart-empty-title popup-title">Ваша корзина пока пуста</h2>
+          </div>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="main-index">
     <section class="slider-menu">
@@ -45,139 +127,193 @@
       </div>
     </section>
     <section class="stock">
-      <h2>Заказывайте мороженое и получайте подарки!</h2>
-      <div class="raspberry">
-        <h3>Малинка даром!</h3>
-        <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно
-        </p>
-        <button class="stock" type="button">
-          <span>Хочу подарок</span>
-        </button>
-      </div>
-      <div class="marshmallow">
-        <h3>Маршмеллоу даром!</h3>
-        <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
-        </p>
-        <button class="stock" type="button">
-          <span>Хочу подарок</span>
-        </button>
+      <h2 class="stock-tittle">Заказывайте мороженое <br> и получайте подарки!</h2>
+      <div class="stock-sales">
+        <div class="raspberry">
+          <h3 class="raspberry-title">Малинка даром!</h3>
+          <p class="raspberry-discription">При покупке 2 кг любого фруктового<br> мороженого добавим в ваш заказ
+            банку<br>
+            малинового варенья бесплатно
+          </p>
+          <a class="stock-button" href="#">
+            <span>Хочу подарок</span>
+          </a>
+        </div>
+        <div class="marshmallow">
+          <h3 class="marshmallow-title">Маршмеллоу даром!</h3>
+          <p class="marshmallow-discription">При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных<br>
+            зефирок
+            совершенно бесплатно.
+          </p>
+          <a class="stock-button" href="#">
+            <span>Хочу подарок</span>
+          </a>
+        </div>
       </div>
     </section>
     <section class="catalog">
-      <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
+      <h2 class="catalog-tittle">Попробуйте самые популярные вкусы нашего мороженого</h2>
       <div class="popular">
-        <ul class="poular-ice">
+        <ul class="popular-ice">
           <li>
-            <h3>Малинка</h3>
-            <p>Сливочное мороженое с малиновым джемом</p>
-            <p>310 ₽/кг</p>
+            <img class="ice-cream-ball" src="/gllacy/images/malinka.svg" width="168" height="168"
+              alt="шар мороженного Малинка">
+            <h3 class="ice-tittle">Малинка</h3>
+            <p class="ice-discription">Сливочное мороженое с малиновым джемом</p>
+            <p class="ice-price">310 ₽/кг</p>
+            <a class="basket-thumb" href="#">
+              <span class="visually-hidden">Добавить товар в корзину.</span>
+            </a>
           </li>
           <li>
-            <h3>Фисташка</h3>
-            <p>Фисташковый пломбир с кусочками шоколада</p>
-            <p>340 ₽/кг</p>
+            <img class="ice-cream-ball" src="/gllacy/images/fistashka.svg" width="168" height="168"
+              alt="шар мороженного Фисташка">
+            <h3 class="ice-tittle">Фисташка</h3>
+            <p class="ice-discription">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="ice-price">340 ₽/кг</p>
+            <a class="basket-thumb" href="#">
+              <span class="visually-hidden">Добавить товар в корзину.</span>
+            </a>
           </li>
           <li>
-            <h3>Черника</h3>
-            <p>Крем-брюле
+            <img class="ice-cream-ball" src="/gllacy/images/chernika.svg" width="168" height="168"
+              alt="шар мороженного Черника">
+            <h3 class="ice-tittle">Черника</h3>
+            <p class="ice-discription">Крем-брюле
               с черничным джемом</p>
-            <p>330 ₽/кг</p>
+            <p class="ice-price">330 ₽/кг</p>
+            <a class="basket-thumb" href="#">
+              <span class="visually-hidden">Добавить товар в корзину.</span>
+            </a>
           </li>
           <li>
-            <h3>Бабл-гам</h3>
-            <p>Ванильный пломбир
+            <img class="ice-cream-ball" src="/gllacy/images/babl.svg" width="168" height="168"
+              alt="шар мороженного Бабл-гам">
+            <h3 class="ice-tittle">Бабл-гам</h3>
+            <p class="ice-discription">Ванильный пломбир
               со сладкой посыпкой</p>
-            <p>320 ₽/кг</p>
+            <p class="ice-price">320 ₽/кг</p>
+            <a class="basket-thumb" href="#">
+              <span class="visually-hidden">Добавить товар в корзину.</span>
+            </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="description">
-      <h2>Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
-      <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и
-        проверенных
-        временем технологий.</p>
-      <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-        и добавки произведены из натурального сырья.</p>
-      <p>Закупка ингредиентов производится только
-        у проверенных фермерских хозяйств, с которыми
-        нас связывает долговременное сотрудничество.</p>
-      <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и
-        позволяет
-        сохранить превосходный вкус.</p>
+    <section class="advantages">
+      <div class="advantages-images-list">
+        <h2 class="advantages-tittle">Магазин Глейси – это онлайн и офлайн-магазин по продаже<br> мороженого
+          собственного
+          проиводства на развес</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item"><img class="ice-advantages" src="/gllacy/images/ice.svg" width="48" height="48"
+              alt="мороженое.">Всё наше мороженое изготавливается на собственном производстве с использованием
+            современного оборудования и
+            проверенных
+            временем технологий.</li>
+          <li class="advantages-item"><img class="ice-advantages" src="/gllacy/images/korova.svg" width="48" height="48"
+              alt="мороженое.">Закупка ингредиентов производится только
+            у проверенных фермерских хозяйств, с которыми
+            нас связывает долговременное сотрудничество.</li>
+          <li class="advantages-item"><img class="ice-advantages" src="/gllacy/images/listik.svg" width="48" height="48"
+              alt="мороженое.">Для приготовления мороженого используются сливки и молоко высочайшего качества.
+            Все
+            ингредиенты
+            и добавки произведены из натурального сырья.</li>
+          <li class="advantages-item"><img class="ice-advantages" src="/gllacy/images/gradusnik.svg" width="48"
+              height="48" alt="мороженое.">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+            даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </div>
     </section>
-    <section class="mailing list">
+    <section class="news-list">
       <div class="new">
-        <p>Новое в нашем блоге</p>
-        <h3>10 способов сервировки фруктовых щербетов
+        <p class="news-discription">Новое в нашем блоге</p>
+        <h3 class="news-title">10 способов сервировки<br> фруктовых щербетов<br>
           к столу</h3>
       </div>
-      <div class="malling-form">
-        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
-          в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-          Честно =)</p>
+      <div class="news-form-wrapper">
+        <div class="news-form">
+          <p class="description-news-form">Подпишитесь на нашу сладкую рассылку и будьте всегда
+            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+            Честно =)</p>
+          <div class="mailing-form-wrapper">
+            <form class="mailing-form" name="mailing-form" method="post" action="https://echo.htmlacademy.ru/">
+              <label class="mailing-label" for="mailing-input">
+                <span class="visually-hidden">E-mail</span>
+              </label>
+              <input class="text-input" type="email" name="mailing-input" id="mailing-input" placeholder="Ваш e-mail">
+              <button class="mailing-button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="mailing-form-wrapper">
-        <form class="mailing-form" name="mailing-form" method="post" action="https://echo.htmlacademy.ru/">
-          <label class="mailing-label" for="mailing-input">
-            <span class="visually-hidden">E-mail</span>
-          </label>
-          <input class="mailing-input" type="email" name="mailing-input" id="mailing-input" placeholder="Ваш e-mail">
-          <button class="mailing-button" type="submit">Отправить</button>
+    </section>
+    <section class="delivery-container">
+      <div class="delivery-text">
+        <h2 class="delivery-title">Доставка любимого<br> мороженого на дом</h2>
+        <p class="delivery-description">Хочется полакомиться любимым дессертом,<br> но нет времени съездить в магазин?
+          Закажите<br> доставку мороженого на дом,
+          и курьер<br>
+          привезёт вам ваш заказ в течение часа!</p>
+      </div>
+      <div class="delivery-form">
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post" name="delivery-form">
+          <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.
+          </p>
+          <div class="delivery-field-wrapper">
+            <span class="form-label">
+              <label class="delivery-form-label date-label" for="delivery-date">Дата<svg class="tooltip-icon" width="14"
+                  height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z" />
+                </svg></label>
+              <span class="delivery-date-tooltip">
+                <input class="delivery-field delivery-date" placeholder="01.04.2020" type="text" name="delivery-date"
+                  id="delivery-date">
+                <button class="tooltip-toggle" type="button" aria-labelledby="delivery-date-tooltip">
+                  <span class="tooltip-text" role="tooltip" id="delivery-date-tooltip">Введите желаемую
+                    дату доставки</span>
+                </button>
+              </span>
+            </span>
+            <label class="delivery-form-label phone-label" for="delivery-phone">Телефон</label>
+            <input class="delivery-field delivery-phone" placeholder="+7 800 999-00-00" type="tel" name="delivery-phone"
+              id="delivery-phone">
+          </div>
+          <div class="delivery-adress-wrapper">
+            <span class="form-label">
+              <label class="delivery-form-label" for="delivery-adress">Адрес<svg class="tooltip-icon" width="14"
+                  height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z" />
+                </svg></label>
+              <input class="delivery-field delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" type="text"
+                name="delivery-adress" id="delivery-adress">
+              <span class="delivery-adress-tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="delivery-adress-tooltip">
+                  <span class="tooltip-text" role="tooltip" id="delivery-adress-tooltip">Введите название
+                    улицы, дома и квартиры</span>
+                </button>
+              </span>
+            </span>
+          </div>
+          <button class="second-style-button delivery-button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
-    <section class="modal-container">
-      <h2>Доставка любимого мороженого на дом</h2>
-      <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом,
-        и курьер
-        привезёт вам ваш заказ в течение часа!</p>
-      <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post" name="delivery-form">
-        <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <div class="delivery-field-wrapper">
-          <span class="form-label">
-            <label class="delivery-form-label date-label" for="delivery-date">Дата</label>
-            <span class="delivery-date-tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="delivery-date-tooltip">
-                <span class="tooltip-text" role="tooltip" id="delivery-date-tooltip">Введите желаемую
-                  дату доставки</span>
-              </button>
-            </span>
-          </span>
-          <input class="delivery-field delivery-date" placeholder="01.04.2020" type="text" name="delivery-date"
-            id="delivery-date">
-          <label class="delivery-form-label phone-label" for="delivery-phone">Телефон</label>
-          <input class="delivery-field delivery-phone" placeholder="+7 800 999-00-00" type="tel" name="delivery-phone"
-            id="delivery-phone">
-        </div>
-        <div class="delivery-adress-wrapper">
-          <span class="form-label">
-            <label class="delivery-form-label" for="delivery-adress">Адрес</label>
-            <span class="delivery-adress-tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="delivery-adress-tooltip">
-                <span class="tooltip-text" role="tooltip" id="delivery-adress-tooltip">Введите название
-                  улицы, дома и квартиры</span>
-              </button>
-            </span>
-          </span>
-          <input class="delivery-field delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" type="text"
-            name="delivery-adress" id="delivery-adress">
-        </div>
-        <button class="second-style-button delivery-button" type="submit">Отправить</button>
-      </form>
-    </section>
     <section class="main-adress">
-      <p>Адрес главного офиса и офлайн-магазина:</p>
-      <h4>наб. реки Карповки, 5 лит П, Санкт-Петербург</h4>
-      <p>Для заказов по телефону:</p>
-      <address class="contacts-phone">
-        <a class="contacts-phone" href="tel:88128121212">+7(812) 812-12-12</a>
+      <p class="adress-description">Адрес главного офиса и офлайн-магазина:</p>
+      <h4 class="adress-title">наб. реки Карповки, 5 лит П, Санкт-Петербург</h4>
+      <p class="order-text">Для заказов по телефону:</p>
+      <address class="contacts-phone-main">
+        <a class="contacts-phone-main" href="tel:88128121212">+7(812) 812-12-12</a>
       </address>
-      <p>(с 10 до 20 ежедневно)</p>
+      <p class="time-work">(с 10 до 20 ежедневно)</p>
       <button class="feedback-button" type="button">Форма обратной связи</button>
     </section>
   </main>
-  <footer>
+  <footer class="page-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">

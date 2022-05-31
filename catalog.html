@@ -3,35 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Каталог</title>
+  <title>Страница сливочного мороженного</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header>
-    <a class="logo-link" href="#">
-      <img class="header-logo" src="/gllacy/images/logotip-header.svg" width="359" height="146" alt="Логотип «Глейси».">
-    </a>
-    <ul class="navigation-user-list">
-      <li class="navigation-user-item">
-        <a class="navigation-user-link" href="#">Каталог</a>
-      </li>
-      <li class="navigation-user-item">
-        <a class="navigation-user-link" href="#">Доставка и оплата</a>
-      </li>
-      <li class="navigation-user-item">
-        <a class="navigation-user-link" href="#">О компании</a>
-      </li>
-    </ul>
-    <address class="contacts-phone">
+    <nav class="navigation-list">
+      <a class="logo-link" href="#">
+        <img class="logo-image" src="/gllacy/images/logotip-header.svg" width="137" height="56" alt="Логотип «Глейси».">
+      </a>
+      <ul class="navigation-user-list">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Каталог</a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">О компании</a>
+        </li>
+      </ul>
       <a class="contacts-phone" href="tel:88005558628">+7 (800) 555-86-28</a>
-    </address>
-    <button class="enter" type="button">
-      <span>Вход</span>
-    </button>
-    <button class="basket" type="button">
-      <span>Пусто</span>
-    </button>
+      <button class="header-search" type="button">
+        <span>Поиск</span>
+      </button>
+      <button class="header-enter" type="button">
+        <span>Вход</span>
+      </button>
+      <button class="-header-basket" type="button">
+        <span>Пусто</span>
+      </button>
+    </nav>
   </header>
   <main class="main-inner">
     <section class="inner-header">
@@ -91,25 +94,25 @@
       <ul class="fat-list global-list">
         <li class="fat-item">
           <label class="fat-percentage">
-            <input class="fat-input visually-hidden" type="radio" name="fat-percent" value="zero-percent">
+            <input class="fat-input" type="radio" name="fat-percent" value="zero-percent">
             <span class="fat-label">0%</span>
           </label>
         </li>
         <li class="fat-item">
           <label class="fat-percentage">
-            <input class="fat-input visually-hidden" type="radio" name="fat-percent" value="up-to-ten-percent" checked>
+            <input class="fat-input" type="radio" name="fat-percent" value="up-to-ten-percent" checked>
             <span class="fat-label">до 10%</span>
           </label>
         </li>
         <li class="fat-item">
           <label class="fat-percentage">
-            <input class="fat-input visually-hidden" type="radio" name="fat-percent" value="up-to-thirty-percent">
+            <input class="fat-input" type="radio" name="fat-percent" value="up-to-thirty-percent">
             <span class="fat-label">до 30%</span>
           </label>
         </li>
         <li class="fat-item">
           <label class="fat-percentage">
-            <input class="fat-input visually-hidden" type="radio" name="fat-percent" value="over-thirty-percent">
+            <input class="fat-input" type="radio" name="fat-percent" value="over-thirty-percent">
             <span class="fat-label">выше 30%</span>
           </label>
         </li>
@@ -121,31 +124,31 @@
       <ul class="fillers-list global-list">
         <li class="filler-item">
           <label class="filler-name">
-            <input class="filler-input visually-hidden" type="checkbox" name="chocolate" checked>
+            <input class="filler-input" type="checkbox" name="chocolate" checked>
             <span class="filler-label">шоколадные</span>
           </label>
         </li>
         <li class="filler-item">
           <label class="filler-name">
-            <input class="filler-input visually-hidden" type="checkbox" name="sugar-sprinkles" checked>
+            <input class="filler-input" type="checkbox" name="sugar-sprinkles" checked>
             <span class="filler-label">сахарные посыпки</span>
           </label>
         </li>
         <li class="filler-item">
           <label class="filler-name">
-            <input class="filler-input visually-hidden" type="checkbox" name="fruit">
+            <input class="filler-input" type="checkbox" name="fruit">
             <span class="filler-label">фрукты</span>
           </label>
         </li>
         <li class="filler-item">
           <label class="filler-name">
-            <input class="filler-input visually-hidden" type="checkbox" name="syrups">
+            <input class="filler-input" type="checkbox" name="syrups">
             <span class="filler-label">сиропы</span>
           </label>
         </li>
         <li class="filler-item">
           <label class="filler-name">
-            <input class="filler-input visually-hidden" type="checkbox" name="jams">
+            <input class="filler-input" type="checkbox" name="jams">
             <span class="filler-label">джемы</span>
           </label>
         </li>
@@ -158,10 +161,10 @@
     <div class="catalog-wrapper">
       <ul class="ice-cream-catalog">
         <li class="ice-cream-catalog-item">
-          <h3>Малинка</h3>
           <img class="ice-cream-ball" src="/gllacy/images/raspberry.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Сливочное мороженое<br> с малиновым джемом</p>
+          <h3>Малинка</h3>
+          <p class="ice-cream-description">Сливочное мороженое с малиновым джемом</p>
           <div class="price-wrapper">
             <p class="price">310 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -170,10 +173,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Фисташка</h3>
           <img class="ice-cream-ball" src="/gllacy/images/pistachio.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Фисташковый пломбир<br> с кусочками шоколада</p>
+          <h3>Фисташка</h3>
+          <p class="ice-cream-description">Фисташковый пломбир с кусочками шоколада</p>
           <div class="price-wrapper">
             <p class="price">340 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -182,10 +185,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Черника</h3>
           <img class="ice-cream-ball" src="/gllacy/images/blueberry.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Крем-брюле<br>
+          <h3>Черника</h3>
+          <p class="ice-cream-description">Крем-брюле
             с черничным джемом</p>
           <div class="price-wrapper">
             <p class="price">330 ₽/кг</p>
@@ -195,10 +198,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Бабл-гам</h3>
           <img class="ice-cream-ball" src="/gllacy/images/babl-gam.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Ванильный пломбир<br>
+          <h3>Бабл-гам</h3>
+          <p class="ice-cream-description">Ванильный пломбир
             со сладкой посыпкой</p>
           <div class="price-wrapper">
             <p class="price">320 ₽/кг</p>
@@ -208,10 +211,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Ежевика</h3>
           <img class="ice-cream-ball" src="/gllacy/images/ezhevika.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Сливочное мороженое<br> с ежевичным джемом</p>
+          <h3>Ежевика</h3>
+          <p class="ice-cream-description">Сливочное мороженое с ежевичным джемом</p>
           <div class="price-wrapper">
             <p class="price">330 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -220,10 +223,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Банан</h3>
           <img class="ice-cream-ball" src="/gllacy/images/banana.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Сливочный пломбир<br>
+          <h3>Банан</h3>
+          <p class="ice-cream-description">Сливочный пломбир
             с банановым вкусом</p>
           <div class="price-wrapper">
             <p class="price">340 ₽/кг</p>
@@ -233,10 +236,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Шоколадка</h3>
           <img class="ice-cream-ball" src="/gllacy/images/shcokoladka.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Классический<br> шоколадный пломбир</p>
+          <h3>Шоколадка</h3>
+          <p class="ice-cream-description">Классический шоколадный пломбир</p>
           <div class="price-wrapper">
             <p class="price">270 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -245,10 +248,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Клубничка</h3>
           <img class="ice-cream-ball" src="/gllacy/images/strawberry.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Сливочный пломбир<br>
+          <h3>Клубничка</h3>
+          <p class="ice-cream-description">Сливочный пломбир
             с клубничным вкусом</p>
           <div class="price-wrapper">
             <p class="price">300 ₽/кг</p>
@@ -258,10 +261,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Лимон</h3>
           <img class="ice-cream-ball" src="/gllacy/images/limon.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Освежающий<br> лимонный сорбет</p>
+          <h3>Лимон</h3>
+          <p class="ice-cream-description">Освежающий лимонный сорбет</p>
           <div class="price-wrapper">
             <p class="price">310 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -270,10 +273,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Ментол</h3>
           <img class="ice-cream-ball" src="/gllacy/images/mentol.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Сливочный пломбир<br>
+          <h3>Ментол</h3>
+          <p class="ice-cream-description">Сливочный пломбир
             с ментоловым сиропом</p>
           <div class="price-wrapper">
             <p class="price">320 ₽/кг</p>
@@ -283,10 +286,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Орешек</h3>
           <img class="ice-cream-ball" src="/gllacy/images/nut.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Фисташковый пломбир<br> с шоколадным сиропом</p>
+          <h3>Орешек</h3>
+          <p class="ice-cream-description">Фисташковый пломбир с шоколадным сиропом</p>
           <div class="price-wrapper">
             <p class="price">360 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -295,10 +298,10 @@
           </div>
         </li>
         <li class="ice-cream-catalog-item">
-          <h3>Крем-брюле</h3>
           <img class="ice-cream-ball" src="/gllacy/images/cream-brule.svg" width="168" height="168"
             alt="шар мороженного Малинка">
-          <p class="ice-cream-description">Классическое<br> крем-брюле</p>
+          <h3>Крем-брюле</h3>
+          <p class="ice-cream-description">Классическое крем-брюле</p>
           <div class="price-wrapper">
             <p class="price">280 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -375,3 +378,5 @@
       2021</p>
   </footer>
 </body>
+
+</html>
